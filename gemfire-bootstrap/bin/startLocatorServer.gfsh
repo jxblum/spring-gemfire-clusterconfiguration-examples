@@ -1,0 +1,13 @@
+start locator --name=LocatorOne --log-level=config
+list members
+import cluster-configuration --zip-file-name=/Users/jblum/pivdev/spring-data-examples-workspace/spring-gemfire-clusterconfiguration-workspace/gemfire-bootstrap/src/main/resources/cluster_config.zip
+status cluster-config-service
+set variable --name=GEMFIRE_HOME --value=/Users/jblum/Downloads/Pivotal/GemStone/Products/GemFire/Pivotal_GemFire_820_b17919_Linux
+echo --string=${GEMFIRE_HOME}
+start server --name=ServerOne --log-level=config --disable-default-server --classpath=${GEMFIRE_HOME}/lib/gemfire-spring-dependencies.jar
+#start server --name=ServerOne --log-level=config --disable-default-server --classpath=${GEMFIRE_HOME}/lib/gemfire-spring-dependencies.jar --J=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
+list members
+describe member --name=ServerOne
+list regions
+describe region --name=JavaBasedRegion
+describe region --name=XmlBasedRegion

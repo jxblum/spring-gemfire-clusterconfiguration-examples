@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cache PUBLIC "-//GemStone Systems, Inc.//GemFire Declarative Cache 8.0//EN" "http://www.gemstone.com/dtd/cache8_0.dtd">
+<cache>
+	<initializer>
+		<class-name>org.springframework.data.gemfire.support.SpringContextBootstrappingInitializer</class-name>
+		<parameter name="contextConfigLocations">
+			<string>classpath:spring-gemfire-using-cluster-config-context.xml</string>
+		</parameter>
+	</initializer>
+</cache>

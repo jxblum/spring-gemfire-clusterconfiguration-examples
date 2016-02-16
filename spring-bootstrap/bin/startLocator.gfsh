@@ -1,0 +1,4 @@
+start locator --name=LocatorOne --log-level=config
+status cluster-config-service
+import cluster-configuration --zip-file-name=/Users/jblum/pivdev/spring-data-examples-workspace/spring-gemfire-clusterconfiguration-workspace/spring-bootstrap/src/main/resources/cluster_config.zip
+list members

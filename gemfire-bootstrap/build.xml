@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="build" default="gemfire-spring-dependencies-jar">
+
+	<property environment="env"/>
+
+	<property name="GEMFIRE_HOME" value="${env.GEMFIRE}"/>
+	<property name="spring.version" value="3.2.13.RELEASE"/>
+	<property name="spring-data-commons.version" value="1.11.2.RELEASE"/>
+	<property name="spring-data-gemfire.version" value="1.7.2.RELEASE"/>
+
+	<target name="gemfire-spring-dependencies-jar" description="Creates a Manifest-only JAR file containing a Class-Path entry listing all required GemFire Spring dependencies.">
+		<delete file="${GEMFIRE_HOME}/lib/gemfire-spring-dependencies.jar"/>
+		<jar jarfile="${GEMFIRE_HOME}/lib/gemfire-spring-dependencies.jar">
+			<manifest>
+				<attribute name="Class-Path"
+						   value="spring-aop-${spring.version}.jar spring-beans-${spring.version}.jar spring-context-${spring.version}.jar spring-context-support-${spring.version}.jar spring-core-${spring.version}.jar spring-data-commons-${spring-data-commons.version}.jar spring-data-gemfire-${spring-data-gemfire.version}.jar spring-expression-${spring.version}.jar spring-tx-${spring.version}.jar"/>
+			</manifest>
+		</jar>
+	</target>
+
+</project>

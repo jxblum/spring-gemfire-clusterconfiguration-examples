@@ -1,0 +1,1 @@
+start server --name=SpringGemFireServer --spring-xml-location=file:///Users/jblum/pivdev/spring-data-examples-workspace/spring-gemfire-clusterconfiguration-workspace/spring-bootstrap/src/main/resources/spring-gemfire-using-cluster-config-context.xml

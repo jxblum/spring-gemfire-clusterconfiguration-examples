@@ -1,0 +1,4 @@
+list members
+stop server --name=ServerOne
+stop locator --name=LocatorOne
+list members
