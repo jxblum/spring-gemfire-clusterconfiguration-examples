@@ -29,7 +29,6 @@
 					  port="${gemfire.cache.server.port:40404}"
 					  max-connections="10"/>
 
-
 	<gfe:replicated-region id="ClusterConfigRegionOne" persistent="false" ignore-if-exists="true"/>
 
 </beans>

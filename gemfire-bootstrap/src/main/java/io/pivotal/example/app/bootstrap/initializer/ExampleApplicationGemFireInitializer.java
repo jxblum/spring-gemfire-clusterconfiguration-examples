@@ -13,6 +13,7 @@ import io.pivotal.example.app.bootstrap.config.ExampleAppGemFireConfiguration;
  * @see org.springframework.data.gemfire.support.SpringContextBootstrappingInitializer
  * @see io.pivotal.example.app.bootstrap.config.ExampleAppGemFireConfiguration
  * @see com.gemstone.gemfire.internal.ClassPathLoader
+ * @see <a href="http://docs.spring.io/spring-data-gemfire/docs/current/reference/html/#gemfire-bootstrap">Spring Context Bootstrapping Initializer</a>
  * @since 1.0.0
  */
 @SuppressWarnings("unused")
