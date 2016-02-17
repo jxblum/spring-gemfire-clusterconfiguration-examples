@@ -72,9 +72,9 @@
 	</developers>
 
 	<scm>
-		<url></url>
-		<connection></connection>
-		<developerConnection></developerConnection>
+		<url>https://github.com/jxblum/spring-gemfire-clusterconfiguration-examples</url>
+		<connection>git@github.com:jxblum/spring-gemfire-clusterconfiguration-examples.git</connection>
+		<developerConnection>git@github.com:jxblum/spring-gemfire-clusterconfiguration-examples.git</developerConnection>
 	</scm>
 
 	<properties>
